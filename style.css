@@ -1,0 +1,27 @@
+.category > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin:;
+    width: 16vw;
+    height: 12vh;
+    border: 1px solid red;
+}
+
+.board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;    
+}
+
+.title *{
+    display: flex;
+    flex-direction: columns;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
