@@ -176,6 +176,14 @@ const clueValue = function(num) {
     return value;
 }
 
+const randomClue = function(cat, pts) {
+    let points = (pts/200) - 1;
+    let randomIndex = Math.floor(Math.random() * cat.scoreValue[points].clues.length);
+    return cat.scoreValue[points].clues[randomIndex].clue;
+}
+
+
+
 // when the user clicks a tile,
 // a div will appear
 // containing a question
