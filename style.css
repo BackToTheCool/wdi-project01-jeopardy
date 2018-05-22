@@ -26,3 +26,11 @@ header {
     justify-content: space-between;
 }
 
+.category {
+
+}
+
+.blank {
+    border: 3px dashed black;
+    background-color: blue;   
+}
