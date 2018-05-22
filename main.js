@@ -145,21 +145,6 @@ const category = {
     }
 }
 
-const selected = $('section > div');
-$('.section > div').click(function (e) {
-    console.log("Something");
-    ;
-    // selected.index(this).toggleClass('blank');
-})
-
-// $('.teams-container').click(function (e) {
-//     var index = $('.teams-container').index(this)
-//     $(this).append(`<p>${teams[index]}</p>`);
-//     .fadeOut(1000, function () {
-//         $(`.teams-container:gt(${index}), .teams-container:lt(${index})`).hide
-//     })
-// })
-
 
 // When I load the page,
 //  I want the entire board
