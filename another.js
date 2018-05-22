@@ -1,3 +1,23 @@
+// Category = object
+// Description = string
+// ScoreValue = object
+// 200 = object
+// points = number
+// questions = array
+// [0] = object
+// clue = string
+// correctAnswer = string
+// wrong answers = array
+// [0] = string
+// [1] = string
+// [2] = string
+// [1] = object
+// [2] = object
+// 400 = object
+// 600 = object
+// 800 = object
+// 1000 = object
+
 const category = {
     description: "this is a description of the category.",
     scoreValue: {

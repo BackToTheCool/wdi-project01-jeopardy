@@ -1,0 +1,40 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* font-family: 'Dosis'; */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgba(0, 0, 255, 0.7); */
+    /* width: 49vw; */
+}
+img {
+    width: 49vw;
+}
+
+body {
+    font-family: 'Quicksand';
+}
+
+h1 {
+    font-size: 8vh;
+}
+h2 {
+    font-size: 6vh;
+    font-weight: 300;
+    background-color: rgba(0,0,0,.4);
+}
+
+tr {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgba(0, 0, 255, 0.7);
+    border: 1px solid rgba(255, 0, 0, 0.7); */
+    padding: 2vh 0;
+    width: 98vw;
+}
