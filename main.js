@@ -1,8 +1,8 @@
 const category = {
     name: "category",
     description: "this is a description of the category.",
-    scoreValue: {
-        twoHundred: {
+    scoreValue: [
+        twoHundred = {
             points: 200,
             clues: [
                 {
@@ -30,7 +30,7 @@ const category = {
                         "This is a 200-3 wrong answer as well."]
                 }]
         },
-        fourHundred: {
+        fourHundred = {
             points: 400,
             clues: [
                 {
@@ -58,7 +58,7 @@ const category = {
                         "This is a 400-3 wrong answer as well."]
                 }]
         },
-        sixHundred: {
+        sixHundred = {
             points: 600,
             clues: [
                 {
@@ -86,7 +86,7 @@ const category = {
                         "This is a 600-3 wrong answer as well."]
                 }]
         },
-        eightHundred: {
+        eightHundred = {
             points: 800,
             clues: [
                 {
@@ -114,7 +114,7 @@ const category = {
                         "This is a 800-3 wrong answer as well."]
                 }]
         },
-        oneThousand: {
+        oneThousand = {
             points: 1000,
             clues: [
                 {
@@ -142,7 +142,7 @@ const category = {
                         "This is a wrong answer as well."]
                 }]
         }
-    }
+    ]
 }
 
 
@@ -158,10 +158,37 @@ const category = {
 // the game will ask the user.
 // only the tiles with numbers will be click-able.
 
+const categorySelection = function(cat) {
+    let selectedCat = cat.name;
+    console.log(selectedCat);
+    return selectedCat;
+}
+
+const categoryDescription = function (cat) {
+    let dscrptn = cat.description;
+    console.log(dscrptn);
+    return dscrptn;
+}
+
+const clueValue = function(num) {
+    let value = category.scoreValue[num].points;
+    console.log(value);
+    return value;
+}
+
 // when the user clicks a tile,
 // a div will appear
 // containing a question
+    // a random question
+    // from a set of questions
+    // will be selected
 // and four possible answers to the question
+    // the possible answers
+    // will be generated
+    // in a random order
+    // and will correspond
+    // to a list
+    // that identifies the correct answers
 // the questions will be on divs themselves
 // and will be click-able
 // if the user selects one of the wrong answers
