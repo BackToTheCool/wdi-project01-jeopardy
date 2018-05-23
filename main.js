@@ -173,14 +173,14 @@ const categoryDescription = function (cat) {
 }
 
 // This will return the number of points a clue will add or subtract by
-const clueValue = function(num) {
+const clueValue = function (num) {
     let value = category.scoreValue[num].points;
     console.log(value);
     return value;
 }
 
 // Based on the amount of the score entered, a number will be returned that corresponds to its index among other score values.
-const scoreIndex = function(score) {
+const scoreIndex = function (score) {
     let points = (score / 200) - 1;
     return points
 
@@ -211,7 +211,7 @@ const answersList = function (cat, pts) {
     let answerKey = [];
 }
 
-const clueFinder = function(cat, pts) {
+const clueFinder = function (cat, pts) {
     return cat.scoreValue[scoreIndex(pts)].clues
 }
 
@@ -220,74 +220,103 @@ const clueFinder = function(cat, pts) {
 // when the user clicks a tile,
 // a div will appear
 // containing a question
-    // a random question
-    // from a set of questions
-    // will be selected
+// a random question
+// from a set of questions
+// will be selected
 // and four possible answers to the question
-    // the possible answers
-    // will be generated
-    // in a random order
-    // and will correspond
-    // to a list
-    // that identifies the correct answers
+// the possible answers
+// will be generated
+// in a random order
+// and will correspond
+// to a list
+// that identifies the correct answers
 // the questions will be on divs themselves
 // and will be click-able
 // if the user selects one of the wrong answers
-    // they will be informed of their mistake
-    // a red 'X' pops up
-    // the correct answer will highlight itself green
-    // and the user's response will turn red
-    // the point value associated with their question
-    // will be subtracted from their current score
+// they will be informed of their mistake
+// a red 'X' pops up
+// the correct answer will highlight itself green
+// and the user's response will turn red
+// the point value associated with their question
+// will be subtracted from their current score
 // if the user's response is correct
-    // a green check will display
-    // their answer will turn green
-    // the point value associated with their question
-    // will be added to their score
+// a green check will display
+// their answer will turn green
+// the point value associated with their question
+// will be added to their score
 // question's div will disappear
 // and the user may select another question.
 
 // if the user clicks on 
-    // one of the category tiles
-    // a brief description will appear
-    // describing the subject matter of that category
+// one of the category tiles
+// a brief description will appear
+// describing the subject matter of that category
 
 // the user's score will be displayed
 // in the upper corner
 // if the user clicks on it
-    // it will display their score 
-    // and the user's potential score
-    // based on the available value
-    // of questions remaining will be displayed
-    // underneath it
+// it will display their score 
+// and the user's potential score
+// based on the available value
+// of questions remaining will be displayed
+// underneath it
 
 // New approach
 // load PAGE
-    // load TITLE
-    // load BOARD
-        // load CATEGORY
-            // load 200
-                // load random CLUE
-                // load ANSWERS in random order
-                    // load correct ANSWER-KEY
-            // load 400
-                // load random CLUE
-                // load ANSWERS in random order
-                    // load correct ANSWER-KEY
-            // load 600
-                // load random CLUE
-                // load ANSWERS in random order
-                    // load correct ANSWER-KEY
-            // load 800
-                // load random CLUE
-                // load ANSWERS in random order
-                    // load correct ANSWER-KEY
-            // load 1000
-                // load random CLUE
-                // load ANSWERS in random order
-                    // load correct ANSWER-KEY
+// load TITLE
+// load BOARD
+// load CATEGORY
+// load 200
+// load random CLUE
+// load ANSWERS in random order
+// load correct ANSWER-KEY
+// load 400
+// load random CLUE
+// load ANSWERS in random order
+// load correct ANSWER-KEY
+// load 600
+// load random CLUE
+// load ANSWERS in random order
+// load correct ANSWER-KEY
+// load 800
+// load random CLUE
+// load ANSWERS in random order
+// load correct ANSWER-KEY
+// load 1000
+// load random CLUE
+// load ANSWERS in random order
+// load correct ANSWER-KEY
 
-const loadAnswers = function(cat, pts) {
+
+// this function will show the location of the correct answer as it corresponds to the array of actual answers
+const answerKey = function (arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (i !== (arr.length - 1)) {
+            newArr.push(false);
+        } else {
+            newArr.push(true);
+        }
+    }
+    return newArr;
+}
+
+// using an algorithm found @ (https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array?noredirect=1&lq=1)
+const shuffleAnswers = function (arr1, arr2) {
+    var newArr = arr1;
+    var j, x, z, i;
+    for (i = arr1.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = arr1[i];
+        z = arr2[i];
+        arr1[i] = arr1[j];
+        arr2[i] = arr2[j];
+        arr1[j] = x;
+        arr2[j] = z;
+    }
+    return [arr1, arr2];
+}
+const loadAnswers = function (cat, pts) {
     // based on the point values given, find its index for the category given
     let scoreValueInd = (pts / 200) - 1;
     // holds the place of the current score information
@@ -299,22 +328,10 @@ const loadAnswers = function(cat, pts) {
     // stores the wrong answers in an array
     let answers = randomClue.wrongAnswers;
     // adds the correct answer to the array
-    answers.push(randomClue.correctAnswer)
-    // console.log(answers);
-    return answers;
-}
+    answers.push(randomClue.correctAnswer);
 
-// const answerKey
+    let solved = answerKey(answers);
+    
 
-// using an algorithm found @ (https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array?noredirect=1&lq=1)
-const shuffleAnswers = function(arr) {
-    var newArr = arr;
-    var j, x, i;
-    for (i = newArr.length - 1; i > 0; i--) {
-        j = Math.floor(Math.random() * (i + 1));
-        x = newArr[i];
-        newArr[i] = newArr[j];
-        newArr[j] = x;
-    }
-    return arr;
+    return shuffleAnswers(answers, solved);
 }
