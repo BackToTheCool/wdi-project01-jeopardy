@@ -200,31 +200,19 @@ const randomIndex = function (num) {
     return Math.floor(Math.random() * num);
 }
 
-// this array's indexes will correlate to where the wrong and right answers are are within the answers array.
-let answerKey = [];
 // This function will accept a category object and a specific point value,
 const answersList = function (cat, pts) {
-    // find that category's set of questions for the given point total
+    // This is the location of the scoreValue's index in the given category
     let points = cat.scoreValue[scoreIndex(pts)];
-    // this array will temporarily hold a cache of all available (right and wrong) answers
-    let answerCache = [];
-        // this array will hold a new array comprised of a clue's shuffled answer choices
+    // This will hold a list of all answer choices
+    let answerCache = points.clues[randomIndex();
     let answers = [];
-    // // iterate itself a number of times equal to the amount of clues indexed within the category's scoreValue given
-    // for (let i = 0; i < points.clues.length; i++) {
-        
-    // which iterates itself through that clue's answer cache
-        for (let i = 0; i <= (points.clues[randomIndex(points.clues.length)].wrongAnswers.length); i++) {
-            if (i === (points.clues[randomIndex(points.clues.length)].wrongAnswers.length)) {
-                answerCache.push(points.clues[i].correctAnswer);
-                console.log(answerCache);
-            } else {
-                answerCache.push(points.clues[i].wrongAnswers[i]);
-                console.log(answerCache);
-            }
+    // this array's indexes will correlate to where the wrong and right answers are are within the answers array.
+    let answerKey = [];
+}
 
-        }
-    // }
+const clueFinder = function(cat, pts) {
+    return cat.scoreValue[scoreIndex(pts)].clues[]
 }
 
 
