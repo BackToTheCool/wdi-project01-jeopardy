@@ -1,4 +1,4 @@
-const categorySports = {
+const sports = {
     name: "Sports",
     description: "Topics ranging from general sports knowledge to individual accomplishments and records.",
     scoreValue: [
@@ -145,7 +145,7 @@ const categorySports = {
     ]
 }
 
-const categoryTV = {
+const television = {
     name: "Television",
     description: "Television trivia featuring tidbits of information from the timeline of televised broadcast.",
     scoreValue: [

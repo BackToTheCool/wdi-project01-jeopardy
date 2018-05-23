@@ -451,63 +451,6 @@ const television = {
 // only the tiles with numbers will be click-able.
 
 // This will return the name of the category passed.
-const categorySelection = function (cat) {
-    let selectedCat = cat.name;
-    console.log(selectedCat);
-    return selectedCat;
-}
-
-// This will return the description of the category passed.
-const categoryDescription = function (cat) {
-    let dscrptn = cat.description;
-    console.log(dscrptn);
-    return dscrptn;
-}
-
-// This will return the number of points a clue will add or subtract by
-const clueValue = function (num) {
-    let value = category.scoreValue[num].points;
-    console.log(value);
-    return value;
-}
-
-// Based on the amount of the score entered, a number will be returned that corresponds to its index among other score values.
-const scoreIndex = function (score) {
-    let points = (score / 200) - 1;
-    return points
-
-}
-
-// This will return a random clue designated to a category's pointValue
-const randomClue = function (cat, pts) {
-    // let points = scoreIndex(pts);
-    let valueInd = cat.scoreValue[scoreIndex(pts)].clues;
-    let randIndex = randomIndex(valueInd.length);
-    // return cat.scoreValue[points].clues[randIndex].clue;
-    return valueInd[randIndex].clue;
-}
-
-// This return a random number to be used as a index.
-const randomIndex = function (num) {
-    return Math.floor(Math.random() * num);
-}
-
-// This function will accept a category object and a specific point value,
-const answersList = function (cat, pts) {
-    // This is the location of the scoreValue's index in the given category
-    let points = cat.scoreValue[scoreIndex(pts)];
-    // This will hold a list of all answer choices
-    let answerCache = points.clues[randomIndex()];
-    let answers = [];
-    // this array's indexes will correlate to where the wrong and right answers are are within the answers array.
-    let answerKey = [];
-}
-
-const clueFinder = function (cat, pts) {
-    return cat.scoreValue[scoreIndex(pts)].clues
-}
-
-
 
 // when the user clicks a tile,
 // a div will appear
@@ -558,7 +501,7 @@ const clueFinder = function (cat, pts) {
         // load TITLE
         // load BOARD
             // load CATEGORY
-                // load scoreValue(5x)
+//---------------// load scoreValue(5x)
 //------------------// load random CLUE
 //------------------// load ANSWERS in random order
 //------------------// load correct ANSWER-KEY
@@ -583,11 +526,11 @@ const shuffleAnswers = function (arr1, arr2) {
     var j, x, z, i;
     for (i = arr1.length - 1; i > 0; i--) {
         j = Math.floor(Math.random() * (i + 1));
-        x = arr1[i];
+        x = newArr[i];
         z = arr2[i];
-        arr1[i] = arr1[j];
+        newArr[i] = newArr[j];
         arr2[i] = arr2[j];
-        arr1[j] = x;
+        newArr[j] = x;
         arr2[j] = z;
     }
     return [arr1, arr2];
@@ -609,9 +552,10 @@ const loadAnswers = function (cat, pts) {
     let solved = answerKey(answers);
     let answersAndKey = shuffleAnswers(answers, solved);
 
-    return [cat.name, pts, randomClue, answersAndKey[0],answersAndKey[1]];
+    return [cat.name, pts, randomClue.clue, answersAndKey[0],answersAndKey[1]];
 }
 
 // I need an array that holds the necessary information at specific indexes in order to simplify the clues and answers process.
 
 // ['categoryString', number, 'clueString', arrayForAnswers, arrayForAnswerKey]
+
