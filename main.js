@@ -188,8 +188,8 @@ const scoreIndex = function(score) {
 
 // This will return a random clue designated to a category's pointValue
 const randomClue = function (cat, pts) {
-    let points = (pts / 200) - 1;
-    let valueInd = cat.scoreValue[points].clues;
+    // let points = scoreIndex(pts);
+    let valueInd = cat.scoreValue[scoreIndex(pts)].clues;
     let randIndex = randomIndex(valueInd.length);
     // return cat.scoreValue[points].clues[randIndex].clue;
     return valueInd[randIndex].clue;
@@ -198,6 +198,33 @@ const randomClue = function (cat, pts) {
 // This return a random number to be used as a index.
 const randomIndex = function (num) {
     return Math.floor(Math.random() * num);
+}
+
+// this array's indexes will correlate to where the wrong and right answers are are within the answers array.
+let answerKey = [];
+// This function will accept a category object and a specific point value,
+const answersList = function (cat, pts) {
+    // find that category's set of questions for the given point total
+    let points = cat.scoreValue[scoreIndex(pts)];
+    // this array will temporarily hold a cache of all available (right and wrong) answers
+    let answerCache = [];
+        // this array will hold a new array comprised of a clue's shuffled answer choices
+    let answers = [];
+    // // iterate itself a number of times equal to the amount of clues indexed within the category's scoreValue given
+    // for (let i = 0; i < points.clues.length; i++) {
+        
+    // which iterates itself through that clue's answer cache
+        for (let i = 0; i <= (points.clues[randomIndex(points.clues.length)].wrongAnswers.length); i++) {
+            if (i === (points.clues[randomIndex(points.clues.length)].wrongAnswers.length)) {
+                answerCache.push(points.clues[i].correctAnswer);
+                console.log(answerCache);
+            } else {
+                answerCache.push(points.clues[i].wrongAnswers[i]);
+                console.log(answerCache);
+            }
+
+        }
+    // }
 }
 
 
