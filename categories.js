@@ -145,148 +145,148 @@ const categorySports = {
     ]
 }
 
-const category = {
-    name: "category",
+const categoryTV = {
+    name: "Television",
     description: "this is a description of the category.",
     scoreValue: [
         twoHundred = {
             points: 200,
             clues: [
                 {
-                    clue: "This is the 200 clue/question #1.",
-                    correctAnswer: "This is the correct answer.",
+                    clue: "In Bewitched, Samantha twitches this body part to practice magic.",
+                    correctAnswer: "What is her nose?",
                     wrongAnswers: [
-                        "This is a 200-1 wrong answer.",
-                        "This is another 200-1 wrong answer.",
-                        "This is a 200-1 wrong answer as well."]
+                        "What is her forehead?",
+                        "What is her bottom?",
+                        "What is her ears?"]
                 },
                 {
-                    clue: "This is the 200 clue/question #2.",
-                    correctAnswer: "This is the correct answer.",
+                    clue: "George Jefferson owned this kind of business on The Jeffersons.",
+                    correctAnswer: "What is a dry cleaner?",
                     wrongAnswers: [
-                        "This is a 200-2 wrong answer.",
-                        "This is another 200-2 wrong answer.",
-                        "This is a 200-2 wrong answer as well."]
+                        "What is a gas station?",
+                        "What is a butcher shop?",
+                        "What is a construction company?"]
                 },
                 {
-                    clue: "This is the 200 clue/question #3.",
-                    correctAnswer: "This is the correct answer.",
+                    clue: "This comic book hero can be seen in every episode of Seinfeld.",
+                    correctAnswer: "Who is Superman?",
                     wrongAnswers: [
-                        "This is a 200-3 wrong answer.",
-                        "This is another 200-3 wrong answer.",
-                        "This is a 200-3 wrong answer as well."]
+                        "Who is Batman?",
+                        "Who is Spider-Man?",
+                        "Who is the Incredible Hulk?"]
                 }]
         },
         fourHundred = {
             points: 400,
             clues: [
                 {
-                    clue: "This is the 400 clue/question #1.",
-                    correctAnswer: "This is the correct answer.",
+                    clue: "This TV series showed the first interracial kiss on American network television.",
+                    correctAnswer: "What is Star Trek?",
                     wrongAnswers: [
-                        "This is a 400-1 wrong answer.",
-                        "This is another 400-1 wrong answer.",
-                        "This is a 400-1 wrong answer as well."]
+                        "What is The Cosby Show?",
+                        "What is Family Feud?",
+                        "What is All in the Family?"]
                 },
                 {
-                    clue: "This is the 400 clue/question #2.",
-                    correctAnswer: "This is the correct answer.",
+                    clue: "This was the name of Michael Knight's car on Knight Rider.",
+                    correctAnswer: "What is KITT?",
                     wrongAnswers: [
-                        "This is a 400-2 wrong answer.",
-                        "This is another 400-2 wrong answer.",
-                        "This is a 400-2 wrong answer as well."]
+                        "What is General Lee?",
+                        "What is Christine?",
+                        "What is HAL 9000?"]
                 },
                 {
-                    clue: "This is the 400 clue/question #3.",
-                    correctAnswer: "This is the correct answer.",
+                    clue: "This author wrote the series of novels HBO's Game of Thrones is based on.",
+                    correctAnswer: "Who is George R. R. Martin?",
                     wrongAnswers: [
-                        "This is a 400-3 wrong answer.",
-                        "This is another 400-3 wrong answer.",
-                        "This is a 400-3 wrong answer as well."]
+                        "Who is J. R. R. Tolkien?",
+                        "Who is J. K. Rowling?",
+                        "Who is Stephen King?"]
                 }]
         },
         sixHundred = {
             points: 600,
             clues: [
                 {
-                    clue: "This is the 600 clue/question #1.",
-                    correctAnswer: "This is the correct answer.",
+                    clue: 'This TV show is famous for the catchphrase "Missed it by that much!"',
+                    correctAnswer: "What is Get Smart?",
                     wrongAnswers: [
-                        "This is a 600-1 wrong answer.",
-                        "This is another 600-1 wrong answer.",
-                        "This is a 600-1 wrong answer as well."]
+                        "What is Galavant?",
+                        "What is the Simpsons'?",
+                        "What is Green Acres?"]
                 },
                 {
-                    clue: "This is the 600 clue/question #2.",
-                    correctAnswer: "This is the correct answer.",
+                    clue: "This show was the first animated series made for prime-time network television.",
+                    correctAnswer: "What is The Flinstones?",
                     wrongAnswers: [
-                        "This is a 600-2 wrong answer.",
-                        "This is another 600-2 wrong answer.",
-                        "This is a 600-2 wrong answer as well."]
+                        "What is The Simpsons'?",
+                        "What is Scooby-Doo?",
+                        "What is Felix the Cat?"]
                 },
                 {
-                    clue: "This is the 600 clue/question #3.",
-                    correctAnswer: "This is the correct answer.",
+                    clue: "This TV show was the first to use the F word.",
+                    correctAnswer: "What is Saturday Night Live?",
                     wrongAnswers: [
-                        "This is a 600-3 wrong answer.",
-                        "This is another 600-3 wrong answer.",
-                        "This is a 600-3 wrong answer as well."]
+                        "What is NYPD Blue?",
+                        "What is Cagney & Lacey?",
+                        "What is Hill Street Blues?"]
                 }]
         },
         eightHundred = {
             points: 800,
             clues: [
                 {
-                    clue: "This is the 800 clue/question #1.",
-                    correctAnswer: "This is the correct answer.",
+                    clue: "This phrase can be seen on a UFO poster in Fox Mulder's office in X-Files.",
+                    correctAnswer: 'What is "I want to believe"?',
                     wrongAnswers: [
-                        "This is a 800-1 wrong answer.",
-                        "This is another 800-1 wrong answer.",
-                        "This is a 800-1 wrong answer as well."]
+                        'What is "The truth is out there"?',
+                        'What is "Trust no one"?',
+                        'What is "We are not alone"?']
                 },
                 {
-                    clue: "This is the 800 clue/question #2.",
-                    correctAnswer: "This is the correct answer.",
+                    clue: "This U.S. President is the first to appear on television.",
+                    correctAnswer: "Who is Franklin D. Roosevelt?",
                     wrongAnswers: [
-                        "This is a 800-2 wrong answer.",
-                        "This is another 800-2 wrong answer.",
-                        "This is a 800-2 wrong answer as well."]
+                        "Who is Dwight D. Eisenhower?",
+                        "Who is Harry S. Truman?",
+                        "Who is Herbert Hoover?"]
                 },
                 {
-                    clue: "This is the 800 clue/question #3.",
-                    correctAnswer: "This is the correct answer.",
+                    clue: "This was name of a famous mouse before Walt Disney changed it Mickey.",
+                    correctAnswer: "What is Mortimer?",
                     wrongAnswers: [
-                        "This is a 800-3 wrong answer.",
-                        "This is another 800-3 wrong answer.",
-                        "This is a 800-3 wrong answer as well."]
+                        "What is Mighty Marvin?",
+                        "What is Michael?",
+                        "What is Minnie?"]
                 }]
         },
         oneThousand = {
             points: 1000,
             clues: [
                 {
-                    clue: "This is the 1000 clue/question #1.",
-                    correctAnswer: "This is the correct answer.",
+                    clue: "This actress played Grandma Squarepants on the animated TV show Spongebob Squarepants.",
+                    correctAnswer: "Who is Marion Ross?",
                     wrongAnswers: [
-                        "This is a wrong answer.",
-                        "This is another wrong answer.",
-                        "This is a wrong answer as well."]
+                        "Who is Mary Tyler Moore?",
+                        "Who is Meredith Baxter?",
+                        "Who is Barbara Eden?"]
                 },
                 {
-                    clue: "This is the 1000 clue/question #2.",
-                    correctAnswer: "This is the correct answer.",
+                    clue: "This product was advertised in the first television commercial.",
+                    correctAnswer: "What are Bulova watches?",
                     wrongAnswers: [
-                        "This is a wrong answer.",
-                        "This is another wrong answer.",
-                        "This is a wrong answer as well."]
+                        "What are Winchell's Donuts?",
+                        "What is Charmin Bath Tissue?",
+                        "What are Phillip Morris cigarettes?"]
                 },
                 {
-                    clue: "This is the 1000 clue/question #3.",
-                    correctAnswer: "This is the correct answer.",
+                    clue: "This sitcom, which was the first ever, was also the first to feature the first TV couple to share a bed.",
+                    correctAnswer: "What is The Mary Kay and Johnny show?",
                     wrongAnswers: [
-                        "This is a wrong answer.",
-                        "This is another wrong answer.",
-                        "This is a wrong answer as well."]
+                        "What is The Brady Bunch?",
+                        "What is The Munsters?",
+                        "What is I Love Lucy?"]
                 }]
         }
     ]
