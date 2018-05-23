@@ -158,28 +158,46 @@ const category = {
 // the game will ask the user.
 // only the tiles with numbers will be click-able.
 
-const categorySelection = function(cat) {
+// This will return the name of the category passed.
+const categorySelection = function (cat) {
     let selectedCat = cat.name;
     console.log(selectedCat);
     return selectedCat;
 }
 
+// This will return the description of the category passed.
 const categoryDescription = function (cat) {
     let dscrptn = cat.description;
     console.log(dscrptn);
     return dscrptn;
 }
 
+// This will return the number of points a clue will add or subtract by
 const clueValue = function(num) {
     let value = category.scoreValue[num].points;
     console.log(value);
     return value;
 }
 
-const randomClue = function(cat, pts) {
-    let points = (pts/200) - 1;
-    let randomIndex = Math.floor(Math.random() * cat.scoreValue[points].clues.length);
-    return cat.scoreValue[points].clues[randomIndex].clue;
+// Based on the amount of the score entered, a number will be returned that corresponds to its index among other score values.
+const scoreIndex = function(score) {
+    let points = (score / 200) - 1;
+    return points
+
+}
+
+// This will return a random clue designated to a category's pointValue
+const randomClue = function (cat, pts) {
+    let points = (pts / 200) - 1;
+    let valueInd = cat.scoreValue[points].clues;
+    let randIndex = randomIndex(valueInd.length);
+    // return cat.scoreValue[points].clues[randIndex].clue;
+    return valueInd[randIndex].clue;
+}
+
+// This return a random number to be used as a index.
+const randomIndex = function (num) {
+    return Math.floor(Math.random() * num);
 }
 
 
