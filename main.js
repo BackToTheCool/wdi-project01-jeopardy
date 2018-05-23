@@ -205,14 +205,14 @@ const answersList = function (cat, pts) {
     // This is the location of the scoreValue's index in the given category
     let points = cat.scoreValue[scoreIndex(pts)];
     // This will hold a list of all answer choices
-    let answerCache = points.clues[randomIndex();
+    let answerCache = points.clues[randomIndex()];
     let answers = [];
     // this array's indexes will correlate to where the wrong and right answers are are within the answers array.
     let answerKey = [];
 }
 
 const clueFinder = function(cat, pts) {
-    return cat.scoreValue[scoreIndex(pts)].clues[]
+    return cat.scoreValue[scoreIndex(pts)].clues
 }
 
 
@@ -261,3 +261,60 @@ const clueFinder = function(cat, pts) {
     // of questions remaining will be displayed
     // underneath it
 
+// New approach
+// load PAGE
+    // load TITLE
+    // load BOARD
+        // load CATEGORY
+            // load 200
+                // load random CLUE
+                // load ANSWERS in random order
+                    // load correct ANSWER-KEY
+            // load 400
+                // load random CLUE
+                // load ANSWERS in random order
+                    // load correct ANSWER-KEY
+            // load 600
+                // load random CLUE
+                // load ANSWERS in random order
+                    // load correct ANSWER-KEY
+            // load 800
+                // load random CLUE
+                // load ANSWERS in random order
+                    // load correct ANSWER-KEY
+            // load 1000
+                // load random CLUE
+                // load ANSWERS in random order
+                    // load correct ANSWER-KEY
+
+const loadAnswers = function(cat, pts) {
+    // based on the point values given, find its index for the category given
+    let scoreValueInd = (pts / 200) - 1;
+    // holds the place of the current score information
+    let answerScoreLoc = cat.scoreValue[scoreValueInd];
+    // finds a random clue index location
+    let randomClueInd = Math.floor(Math.random() * answerScoreLoc.clues.length);
+    // stores the random clue object
+    let randomClue = answerScoreLoc.clues[randomClueInd];
+    // stores the wrong answers in an array
+    let answers = randomClue.wrongAnswers;
+    // adds the correct answer to the array
+    answers.push(randomClue.correctAnswer)
+    // console.log(answers);
+    return answers;
+}
+
+// const answerKey
+
+// using an algorithm found @ (https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array?noredirect=1&lq=1)
+const shuffleAnswers = function(arr) {
+    var newArr = arr;
+    var j, x, i;
+    for (i = newArr.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = newArr[i];
+        newArr[i] = newArr[j];
+        newArr[j] = x;
+    }
+    return arr;
+}

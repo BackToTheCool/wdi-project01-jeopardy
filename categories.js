@@ -147,7 +147,7 @@ const categorySports = {
 
 const categoryTV = {
     name: "Television",
-    description: "this is a description of the category.",
+    description: "Television trivia featuring tidbits of information from the timeline of televised broadcast.",
     scoreValue: [
         twoHundred = {
             points: 200,
