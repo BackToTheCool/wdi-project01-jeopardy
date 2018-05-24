@@ -32,12 +32,13 @@ The game generates as soon a user enter the page. From there, they can begin to 
 
 ## Other Planning References
 
-(images/IMG-1310.jpg)
-(images/IMG-1311.jpg)
-(images/IMG-1312.jpg)
-(images/IMG-1313.jpg)
-(images/IMG-1314.jpg)
-(images/IMG-1315.jpg)
+    (images/IMG-1310.jpg)
+    (images/IMG-1310.jpg)
+    (images/IMG-1311.jpg)
+    (images/IMG-1312.jpg)
+    (images/IMG-1313.jpg)
+    (images/IMG-1314.jpg)
+    (images/IMG-1315.jpg)
 
 ## Future Development
 
