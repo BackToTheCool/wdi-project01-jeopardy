@@ -38,3 +38,5 @@ The game generates as soon a user enter the page. From there, they can begin to 
   * Add a second round with a new set of categories.
   * Add a final question
   * Add dynamic themes
+  * Add Daily Double feature
+
