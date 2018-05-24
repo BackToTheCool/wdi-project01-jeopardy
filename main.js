@@ -1175,7 +1175,7 @@ const catDesign = function () {
     }
 }
 
-$('.Television, .Sports, .Some-Category').click(function (e) { 
+$('.Television, .Sports').click(function (e) { 
     // $('category').addClass('painted');
     $('.category').toggleClass('painted');
     e.preventDefault();
@@ -1248,3 +1248,7 @@ $div.click(function() {
 })
 
 $('.modal-content button').text(`${$('#').attr('class')}`)
+
+$(selector).click(function (e) { 
+    
+});
