@@ -577,7 +577,7 @@ const catDesign = function () {
     }
 }
 
-$('.category').click(function (e) { 
+$('.Television, .Sports, .Some-Category').click(function (e) { 
     // $('category').addClass('painted');
     $('.category').toggleClass('painted');
     e.preventDefault();
@@ -608,30 +608,42 @@ window.onclick = function(event) {
     }
 }
 
+window.onload
 var $section = $('.section')
 var $category = $('.section > .category')
 
-function pageLoad() {
+// function pageLoad() {
     let i, h;
     for (i in $section){
         ($section.eq(i)).addClass(`category${i}`);
         for (h in $(`.category${i} > div`)) {
+            ($(`.category${i} > div`).eq(h)).removeClass(`category`);
             ($(`.category${i} > div`).eq(h)).addClass(`boardRow${h}`);
             ($(`.category${i} > div`).eq(h)).addClass(`${categoryOptions[i].name}`);
             if (h > 0) {
                 ($(`.category${i} > div`).eq(h)).text(`$${200*h}`);
                 ($(`.category${i} > div`).eq(h)).addClass(`${200*h}-pts`);
+                ($(`.category${i} > div`).eq(h)).attr(`id`,`${categoryOptions[i].name}For${200*h}`);
+
             } else {
                 ($(`.category${i} > div`).eq(h)).text(`${categoryOptions[i].name}`);
                 ($(`.category${i} > div`).eq(h)).addClass(`Title`);
             }//else
         }//for h
     }//for i
-}//pageLoad
+// }//pageLoad
 
-$('.div').click(function (e) { 
-    if (!(e.target).hasClass(`Title`)) {
-        console.log("awesome! some pts");
-    }//if
+$('.boardRow0').click(function (e) {
+    console.log("awesome! some pts");
     
 });
+
+let $div = $('div');
+$div.click(function() {
+    if ($div.hasClass("Television")) {
+        // $(selector).text(textString);
+        // modal.text("Television");
+        modal.style.display = "block";
+    }
+    console.log("HI!");
+})
