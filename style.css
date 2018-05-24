@@ -31,6 +31,19 @@ img {
     text-decoration-color: blue;
 }
 
+h2 {
+    text-align: center;
+    line-height: 12vh;
+    margin: .5vh 0;
+    width: 15vw;
+    height: 12vh;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.75);
+    font-size: 3vw;
+    color: rgba(255, 255, 255, 1);
+    font-family: Quicksand;
+}
+
 
 .title *{
     display: flex;
