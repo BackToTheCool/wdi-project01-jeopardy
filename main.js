@@ -1,5 +1,5 @@
-const someCategory = {
-    name: "Some-Category",
+const tragedy = {
+    name: "Tragic",
     description: "this is a description of the category.",
     scoreValue: [
         twoHundred = {
@@ -436,8 +436,592 @@ const television = {
         }
     ]
 }
+const fashion = {
+    name: "Fashion",
+    description: "this is a description of the category.",
+    scoreValue: [
+        twoHundred = {
+            points: 200,
+            clues: [
+                {
+                    clue: "This is the 200 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 200-1 wrong answer.",
+                        "This is another 200-1 wrong answer.",
+                        "This is a 200-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 200 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 200-2 wrong answer.",
+                        "This is another 200-2 wrong answer.",
+                        "This is a 200-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 200 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 200-3 wrong answer.",
+                        "This is another 200-3 wrong answer.",
+                        "This is a 200-3 wrong answer as well."]
+                }]
+        },
+        fourHundred = {
+            points: 400,
+            clues: [
+                {
+                    clue: "This is the 400 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 400-1 wrong answer.",
+                        "This is another 400-1 wrong answer.",
+                        "This is a 400-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 400 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 400-2 wrong answer.",
+                        "This is another 400-2 wrong answer.",
+                        "This is a 400-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 400 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 400-3 wrong answer.",
+                        "This is another 400-3 wrong answer.",
+                        "This is a 400-3 wrong answer as well."]
+                }]
+        },
+        sixHundred = {
+            points: 600,
+            clues: [
+                {
+                    clue: "This is the 600 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 600-1 wrong answer.",
+                        "This is another 600-1 wrong answer.",
+                        "This is a 600-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 600 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 600-2 wrong answer.",
+                        "This is another 600-2 wrong answer.",
+                        "This is a 600-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 600 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 600-3 wrong answer.",
+                        "This is another 600-3 wrong answer.",
+                        "This is a 600-3 wrong answer as well."]
+                }]
+        },
+        eightHundred = {
+            points: 800,
+            clues: [
+                {
+                    clue: "This is the 800 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 800-1 wrong answer.",
+                        "This is another 800-1 wrong answer.",
+                        "This is a 800-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 800 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 800-2 wrong answer.",
+                        "This is another 800-2 wrong answer.",
+                        "This is a 800-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 800 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 800-3 wrong answer.",
+                        "This is another 800-3 wrong answer.",
+                        "This is a 800-3 wrong answer as well."]
+                }]
+        },
+        oneThousand = {
+            points: 1000,
+            clues: [
+                {
+                    clue: "This is the 1000 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a wrong answer.",
+                        "This is another wrong answer.",
+                        "This is a wrong answer as well."]
+                },
+                {
+                    clue: "This is the 1000 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a wrong answer.",
+                        "This is another wrong answer.",
+                        "This is a wrong answer as well."]
+                },
+                {
+                    clue: "This is the 1000 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a wrong answer.",
+                        "This is another wrong answer.",
+                        "This is a wrong answer as well."]
+                }]
+        }
+    ]
+}
+const wdi = {
+    name: "WDI 16",
+    description: "this is a description of the category.",
+    scoreValue: [
+        twoHundred = {
+            points: 200,
+            clues: [
+                {
+                    clue: "This is the 200 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 200-1 wrong answer.",
+                        "This is another 200-1 wrong answer.",
+                        "This is a 200-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 200 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 200-2 wrong answer.",
+                        "This is another 200-2 wrong answer.",
+                        "This is a 200-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 200 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 200-3 wrong answer.",
+                        "This is another 200-3 wrong answer.",
+                        "This is a 200-3 wrong answer as well."]
+                }]
+        },
+        fourHundred = {
+            points: 400,
+            clues: [
+                {
+                    clue: "This is the 400 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 400-1 wrong answer.",
+                        "This is another 400-1 wrong answer.",
+                        "This is a 400-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 400 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 400-2 wrong answer.",
+                        "This is another 400-2 wrong answer.",
+                        "This is a 400-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 400 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 400-3 wrong answer.",
+                        "This is another 400-3 wrong answer.",
+                        "This is a 400-3 wrong answer as well."]
+                }]
+        },
+        sixHundred = {
+            points: 600,
+            clues: [
+                {
+                    clue: "This is the 600 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 600-1 wrong answer.",
+                        "This is another 600-1 wrong answer.",
+                        "This is a 600-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 600 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 600-2 wrong answer.",
+                        "This is another 600-2 wrong answer.",
+                        "This is a 600-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 600 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 600-3 wrong answer.",
+                        "This is another 600-3 wrong answer.",
+                        "This is a 600-3 wrong answer as well."]
+                }]
+        },
+        eightHundred = {
+            points: 800,
+            clues: [
+                {
+                    clue: "This is the 800 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 800-1 wrong answer.",
+                        "This is another 800-1 wrong answer.",
+                        "This is a 800-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 800 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 800-2 wrong answer.",
+                        "This is another 800-2 wrong answer.",
+                        "This is a 800-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 800 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 800-3 wrong answer.",
+                        "This is another 800-3 wrong answer.",
+                        "This is a 800-3 wrong answer as well."]
+                }]
+        },
+        oneThousand = {
+            points: 1000,
+            clues: [
+                {
+                    clue: "This is the 1000 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a wrong answer.",
+                        "This is another wrong answer.",
+                        "This is a wrong answer as well."]
+                },
+                {
+                    clue: "This is the 1000 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a wrong answer.",
+                        "This is another wrong answer.",
+                        "This is a wrong answer as well."]
+                },
+                {
+                    clue: "This is the 1000 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a wrong answer.",
+                        "This is another wrong answer.",
+                        "This is a wrong answer as well."]
+                }]
+        }
+    ]
+}
+const atlanta = {
+    name: "Atlanta",
+    description: "this is a description of the category.",
+    scoreValue: [
+        twoHundred = {
+            points: 200,
+            clues: [
+                {
+                    clue: "This is the 200 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 200-1 wrong answer.",
+                        "This is another 200-1 wrong answer.",
+                        "This is a 200-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 200 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 200-2 wrong answer.",
+                        "This is another 200-2 wrong answer.",
+                        "This is a 200-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 200 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 200-3 wrong answer.",
+                        "This is another 200-3 wrong answer.",
+                        "This is a 200-3 wrong answer as well."]
+                }]
+        },
+        fourHundred = {
+            points: 400,
+            clues: [
+                {
+                    clue: "This is the 400 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 400-1 wrong answer.",
+                        "This is another 400-1 wrong answer.",
+                        "This is a 400-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 400 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 400-2 wrong answer.",
+                        "This is another 400-2 wrong answer.",
+                        "This is a 400-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 400 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 400-3 wrong answer.",
+                        "This is another 400-3 wrong answer.",
+                        "This is a 400-3 wrong answer as well."]
+                }]
+        },
+        sixHundred = {
+            points: 600,
+            clues: [
+                {
+                    clue: "This is the 600 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 600-1 wrong answer.",
+                        "This is another 600-1 wrong answer.",
+                        "This is a 600-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 600 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 600-2 wrong answer.",
+                        "This is another 600-2 wrong answer.",
+                        "This is a 600-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 600 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 600-3 wrong answer.",
+                        "This is another 600-3 wrong answer.",
+                        "This is a 600-3 wrong answer as well."]
+                }]
+        },
+        eightHundred = {
+            points: 800,
+            clues: [
+                {
+                    clue: "This is the 800 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 800-1 wrong answer.",
+                        "This is another 800-1 wrong answer.",
+                        "This is a 800-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 800 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 800-2 wrong answer.",
+                        "This is another 800-2 wrong answer.",
+                        "This is a 800-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 800 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 800-3 wrong answer.",
+                        "This is another 800-3 wrong answer.",
+                        "This is a 800-3 wrong answer as well."]
+                }]
+        },
+        oneThousand = {
+            points: 1000,
+            clues: [
+                {
+                    clue: "This is the 1000 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a wrong answer.",
+                        "This is another wrong answer.",
+                        "This is a wrong answer as well."]
+                },
+                {
+                    clue: "This is the 1000 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a wrong answer.",
+                        "This is another wrong answer.",
+                        "This is a wrong answer as well."]
+                },
+                {
+                    clue: "This is the 1000 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a wrong answer.",
+                        "This is another wrong answer.",
+                        "This is a wrong answer as well."]
+                }]
+        }
+    ]
+}
+const carpentry = {
+    name: "Carpentry",
+    description: "this is a description of the category.",
+    scoreValue: [
+        twoHundred = {
+            points: 200,
+            clues: [
+                {
+                    clue: "This is the 200 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 200-1 wrong answer.",
+                        "This is another 200-1 wrong answer.",
+                        "This is a 200-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 200 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 200-2 wrong answer.",
+                        "This is another 200-2 wrong answer.",
+                        "This is a 200-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 200 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 200-3 wrong answer.",
+                        "This is another 200-3 wrong answer.",
+                        "This is a 200-3 wrong answer as well."]
+                }]
+        },
+        fourHundred = {
+            points: 400,
+            clues: [
+                {
+                    clue: "This is the 400 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 400-1 wrong answer.",
+                        "This is another 400-1 wrong answer.",
+                        "This is a 400-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 400 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 400-2 wrong answer.",
+                        "This is another 400-2 wrong answer.",
+                        "This is a 400-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 400 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 400-3 wrong answer.",
+                        "This is another 400-3 wrong answer.",
+                        "This is a 400-3 wrong answer as well."]
+                }]
+        },
+        sixHundred = {
+            points: 600,
+            clues: [
+                {
+                    clue: "This is the 600 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 600-1 wrong answer.",
+                        "This is another 600-1 wrong answer.",
+                        "This is a 600-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 600 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 600-2 wrong answer.",
+                        "This is another 600-2 wrong answer.",
+                        "This is a 600-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 600 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 600-3 wrong answer.",
+                        "This is another 600-3 wrong answer.",
+                        "This is a 600-3 wrong answer as well."]
+                }]
+        },
+        eightHundred = {
+            points: 800,
+            clues: [
+                {
+                    clue: "This is the 800 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 800-1 wrong answer.",
+                        "This is another 800-1 wrong answer.",
+                        "This is a 800-1 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 800 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 800-2 wrong answer.",
+                        "This is another 800-2 wrong answer.",
+                        "This is a 800-2 wrong answer as well."]
+                },
+                {
+                    clue: "This is the 800 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a 800-3 wrong answer.",
+                        "This is another 800-3 wrong answer.",
+                        "This is a 800-3 wrong answer as well."]
+                }]
+        },
+        oneThousand = {
+            points: 1000,
+            clues: [
+                {
+                    clue: "This is the 1000 clue/question #1.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a wrong answer.",
+                        "This is another wrong answer.",
+                        "This is a wrong answer as well."]
+                },
+                {
+                    clue: "This is the 1000 clue/question #2.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a wrong answer.",
+                        "This is another wrong answer.",
+                        "This is a wrong answer as well."]
+                },
+                {
+                    clue: "This is the 1000 clue/question #3.",
+                    correctAnswer: "This is the correct answer.",
+                    wrongAnswers: [
+                        "This is a wrong answer.",
+                        "This is another wrong answer.",
+                        "This is a wrong answer as well."]
+                }]
+        }
+    ]
+}
 
-const categoryOptions = [sports, someCategory, television, sports, television, sports, television]
+const categoryOptions = [sports, tragedy, television, wdi, atlanta, carpentry]
 
 
 // When I load the page,
@@ -523,6 +1107,20 @@ const answerKey = function (arr) {
 }
 
 // using an algorithm found @ (https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array?noredirect=1&lq=1)
+const shuffleArray = function (arr1) {
+    // var newArr = arr1;
+    var j, x, z, i;
+    for (i = arr1.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = arr1[i];
+        // z = arr2[i];
+        arr1[i] = arr1[j];
+        // arr2[i] = arr2[j];
+        arr1[j] = x;
+        // arr2[j] = z;
+    }
+    return arr1;
+}
 const shuffleAnswers = function (arr1, arr2) {
     var newArr = arr1;
     var j, x, z, i;
@@ -614,6 +1212,7 @@ var $category = $('.section > .category')
 
 // function pageLoad() {
     let i, h;
+    shuffleArray(categoryOptions);
     for (i in $section){
         ($section.eq(i)).addClass(`category${i}`);
         for (h in $(`.category${i} > div`)) {
@@ -648,4 +1247,4 @@ $div.click(function() {
     console.log("HI!");
 })
 
-$('.modal-content button').text(`${$().attr('class')}`)
+$('.modal-content button').text(`${$('#').attr('class')}`)

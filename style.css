@@ -6,6 +6,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
+    line-height: 12vh;    
     margin: .5vh 0;
     width: 15vw;
     height: 12vh;
@@ -27,8 +28,13 @@ body{
     width: 95vw;    
 }
 img {
-    height: 25vh;
+    padding: 0;
+    height: 8vh;
     text-decoration-color: blue;
+}
+h4 {
+    padding: 0;
+    margin: 5px auto 20px;
 }
 
 h2 {
