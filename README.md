@@ -30,7 +30,8 @@ The game generates as soon a user enter the page. From there, they can begin to 
 
 ![Game in Progress](wireframe02/1-Home.png)
 
-##Other Planning References
+## Other Planning References
+
 (images/IMG-1310.jpg)
 (images/IMG-1311.jpg)
 (images/IMG-1312.jpg)
