@@ -1,3 +1,7 @@
+body{
+    background: url(img/bg1.jpg), right top;
+    background-size: cover;
+}
 .section > div{
     display: flex;
     flex-direction: column;
@@ -5,7 +9,14 @@
     margin: .5vh 0;
     width: 15vw;
     height: 12vh;
-    border: 1px solid red;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.75);
+    font-size: 3vw;
+    color: rgba(255, 255, 255, 1);
+    font-family: Quicksand;
+}
+.category {
+    background-color: rgba(0, 0, 0, 0.8))
 }
 
 .board {
@@ -15,10 +26,17 @@
     margin: 0 auto;
     width: 95vw;    
 }
+img {
+    height: 25vh;
+    text-decoration-color: blue;
+}
 
 .title *{
     display: flex;
     flex-direction: columns;
+    font-family: Quicksand;
+    font-variant: small-caps;
+    color: rgba(255, 255, 0, 0.6);
 }
 header {
     display: flex;
