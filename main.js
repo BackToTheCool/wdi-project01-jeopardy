@@ -647,3 +647,5 @@ $div.click(function() {
     }
     console.log("HI!");
 })
+
+$('.modal-content button').text(`${$().attr('class')}`)

@@ -31,6 +31,7 @@ img {
     text-decoration-color: blue;
 }
 
+
 .title *{
     display: flex;
     flex-direction: columns;
