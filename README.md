@@ -19,10 +19,7 @@ The game generates as soon a user enter the page. From there, they can begin to 
 
 ## Features
 
-  * Scoreboard
-  * New Game Button
-  * Reset Score Button
-  * Highlights winning squares
+  * Scoreboard (unresponsive)
 
 
 ## Wireframe
