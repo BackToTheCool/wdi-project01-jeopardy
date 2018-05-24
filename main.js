@@ -1,5 +1,5 @@
-const category = {
-    name: "category",
+const someCategory = {
+    name: "Some-Category",
     description: "this is a description of the category.",
     scoreValue: [
         twoHundred = {
@@ -437,7 +437,7 @@ const television = {
     ]
 }
 
-const categoryOptions = [category, sports, television, sports, television, sports, television]
+const categoryOptions = [sports, someCategory, television, sports, television, sports, television]
 
 
 // When I load the page,
@@ -617,11 +617,21 @@ function pageLoad() {
         ($section.eq(i)).addClass(`category${i}`);
         for (h in $(`.category${i} > div`)) {
             ($(`.category${i} > div`).eq(h)).addClass(`boardRow${h}`);
+            ($(`.category${i} > div`).eq(h)).addClass(`${categoryOptions[i].name}`);
             if (h > 0) {
                 ($(`.category${i} > div`).eq(h)).text(`$${200*h}`);
+                ($(`.category${i} > div`).eq(h)).addClass(`${200*h}-pts`);
             } else {
                 ($(`.category${i} > div`).eq(h)).text(`${categoryOptions[i].name}`);
+                ($(`.category${i} > div`).eq(h)).addClass(`Title`);
             }//else
         }//for h
     }//for i
 }//pageLoad
+
+$('.div').click(function (e) { 
+    if (!(e.target).hasClass(`Title`)) {
+        console.log("awesome! some pts");
+    }//if
+    
+});
