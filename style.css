@@ -2,7 +2,7 @@ body{
     background: url(img/bg1.jpg), right top;
     background-size: cover;
 }
-.section > div{
+.section > div {
     display: flex;
     flex-direction: column;
     text-align: center;

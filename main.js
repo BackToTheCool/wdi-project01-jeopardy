@@ -1023,7 +1023,6 @@ const carpentry = {
 
 const categoryOptions = [sports, tragedy, television, wdi, atlanta, carpentry]
 
-
 // When I load the page,
 //  I want the entire board
 //   to fill itself out.
@@ -1249,6 +1248,3 @@ $div.click(function() {
 
 $('.modal-content button').text(`${$('#').attr('class')}`)
 
-$(selector).click(function (e) { 
-    
-});
